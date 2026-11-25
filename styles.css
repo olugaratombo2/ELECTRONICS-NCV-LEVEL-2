@@ -1,0 +1,39 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+body { background:#0b1220; color:#fff; }
+#app { max-width:480px; margin:0 auto; min-height:100vh; }
+header { padding:14px 16px; border-bottom:1px solid #1c2536; }
+header h1 { font-size:20px; }
+main { padding:16px; padding-bottom:90px; }
+.hero { background:#1b2740; border-radius:16px; padding:20px; margin-bottom:16px; }
+.hero h2 { font-size:18px; margin-bottom:8px; }
+.hero p { color:#9aa5b8; font-size:14px; margin-bottom:16px; }
+.btn-primary { background:#3b82f6; color:#fff; border:none; padding:14px; border-radius:12px; font-size:15px; font-weight:600; width:100%; cursor:pointer; }
+.btn-primary:active { background:#2563eb; transform:scale(0.98); }
+.stats-row { display:flex; gap:10px; margin-bottom:20px; }
+.stat-card { flex:1; background:#141e30; border-radius:12px; padding:14px; text-align:center; }
+.stat-card .value { font-size:20px; font-weight:700; }
+.stat-card .label { font-size:11px; color:#9aa5b8; }
+h3 { font-size:16px; margin-bottom:12px; }
+h4 { font-size:14px; color:#3b82f6; margin:14px 0 6px; }
+.topic-card { background:#141e30; border-radius:12px; padding:16px; margin-bottom:10px; cursor:pointer; display:flex; align-items:center; gap:12px; }
+.topic-card .badge { width:40px; height:40px; border-radius:10px; background:#1c2b4a; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:bold; color:#3b82f6; }
+.topic-card .name { font-size:15px; font-weight:500; }
+.option { background:#141e30; border-radius:10px; padding:14px; margin-bottom:8px; cursor:pointer; display:flex; align-items:center; gap:10px; }
+.option .letter { width:28px; height:28px; border-radius:50%; background:#1c2b4a; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; }
+.option.correct { background:#16a34a; color:#fff; }
+.option.wrong { background:#dc2626; color:#fff; }
+.notes-box { background:#141e30; border-radius:12px; padding:18px; line-height:1.6; font-size:14px; }
+.notes-box b { color:#fff; }
+.bottom-nav { position:fixed; bottom:0; left:0; right:0; max-width:480px; margin:0 auto; background:#0b1220; border-top:1px solid #1c2536; display:flex; }
+.nav-item { 
+  flex:1; 
+  padding:12px 4px; 
+  text-align:center; 
+  font-size:11px; 
+  color:#9aa5b8; 
+  cursor:pointer; 
+  background:none; 
+  border:none; 
+  font-family:inherit;
+}
+.nav-item.active { color:#3b82f6; }

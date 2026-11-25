@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RATOMBO! - Electronics NCV L2</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Electronic NCV Level 2</h1>
+  </header>
+
+  <main id="main-content"><h2>Loading...</h2></main>
+
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-page="home">Home</button>
+    <button class="nav-item" data-page="quiz">Quiz</button>
+    <button class="nav-item" data-page="papers">Papers</button>
+    <button class="nav-item" data-page="progress">Progress</button>
+  </nav>
+</div>
+
+<script src="script.js"></script>
+<script src="scope.js"></script>
+<script src="scope-additions.js"></script>
+
+<script>
+function renderPapers() {
+  main.innerHTML = '<h3>Past Exam Papers</h3><p>Electronics NCV L2 - tap to open</p>' +
+    '<div class="topic-card" style="background:#1a2a1a;border:1px solid #16a34a" onclick="window.open(\'https://onecompiler.com/html/4522ah77k\',\'_blank\')"><div class="badge" style="background:#16a34a;color:#fff">STORE</div><div class="name">NCV Past Papers Store<br><small>All papers 2010-2026 with memos - Download PDFs</small></div></div>' +
+    '<div class="topic-card" style="background:#1a2a1a;border:1px solid #3b82f6" onclick="window.open(\'https://base44.app/api/apps/6a32241db3d6cf2fb849f7a9/files/mp/public/6a32241db3d6cf2fb849f7a9/11d0f7257_Electronics_L2_Past_Papers.pdf\',\'_blank\')"><div class="badge" style="background:#3b82f6;color:#fff">PDF</div><div class="name">Electronics L2 Exam Pack<br><small>2 Practice Papers + Answers</small></div></div>';
+}
+</script>
+</body>
+</html>
